@@ -40,7 +40,7 @@ import Signup from "./pages/Signup";
 // Admin
 
 import Admin from "./admin/Admin";
-import Addproduct from "./admin/Addproduct";
+import AddProduct from "./admin/AddProduct";
 import ProductList from "./admin/ProductList";
 import EditProduct from "./admin/EditProduct";
 import Orders from "./admin/Orders";
@@ -322,7 +322,7 @@ function App(){
 
         <Route
 
-          path="/admin/add-product"
+          path="/admin/Add-product"
 
           element={<AddProduct />}
 

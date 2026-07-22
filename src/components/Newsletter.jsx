@@ -12,21 +12,32 @@ function Newsletter() {
           Subscribe to receive updates, offers and new handmade products.
         </p>
 
-        <div className="flex flex-col md:flex-row gap-4 mt-10">
+
+        <form
+          action= "https://formspree.io/f/mvzebqpp"
+          method="POST"
+          className="flex flex-col md:flex-row gap-4 mt-10"
+        >
 
           <input
             type="email"
+            name="email"
             placeholder="Enter your email"
+            required
             className="flex-1 p-5 rounded-xl outline-none text-black bg-white"
           />
 
+
           <button
-            className="bg-black hover:bg-zinc-900 text-white px-10 rounded-xl font-bold transition"
+            type="submit"
+            className="bg-black hover:bg-zinc-900 text-white px-10 py-4 rounded-xl font-bold transition"
           >
             Subscribe
           </button>
 
-        </div>
+
+        </form>
+
 
       </div>
 

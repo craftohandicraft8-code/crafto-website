@@ -14,7 +14,9 @@ function Contact() {
           We'd love to hear from you.
         </p>
 
+
         <div className="grid lg:grid-cols-2 gap-12">
+
 
           {/* Left */}
 
@@ -24,83 +26,104 @@ function Contact() {
               Get In Touch
             </h3>
 
+
             <div className="space-y-8">
 
               <div>
                 <h4 className="text-green-400 font-bold text-xl">
                   📍 Address
                 </h4>
-
                 <p className="text-gray-400 mt-2">
                   Delhi, India
                 </p>
               </div>
 
+
               <div>
                 <h4 className="text-green-400 font-bold text-xl">
                   📞 Phone
                 </h4>
-
                 <p className="text-gray-400 mt-2">
                   +91 9999230726
                 </p>
               </div>
 
+
               <div>
                 <h4 className="text-green-400 font-bold text-xl">
                   📧 Email
                 </h4>
-
                 <p className="text-gray-400 mt-2">
                   craftoofficial@gmail.com
                 </p>
               </div>
 
+
               <div>
                 <h4 className="text-green-400 font-bold text-xl">
                   🌍 Instagram
                 </h4>
-
                 <p className="text-gray-400 mt-2">
                   @craftoofficial
                 </p>
               </div>
 
+
             </div>
 
           </div>
 
-          {/* Right */}
 
-          <div className="bg-zinc-900 rounded-2xl p-10">
+
+          {/* Form */}
+
+          <form
+            action="https://formspree.io/f/xnjebvep"
+            method="POST"
+            className="bg-zinc-900 rounded-2xl p-10"
+          >
+
 
             <input
               type="text"
+              name="name"
               placeholder="Your Name"
-              className="w-full p-4 rounded-xl bg-zinc-800 mb-5"
+              required
+              className="w-full p-4 rounded-xl bg-zinc-800 mb-5 text-white"
             />
+
 
             <input
               type="email"
+              name="email"
               placeholder="Email"
-              className="w-full p-4 rounded-xl bg-zinc-800 mb-5"
+              required
+              className="w-full p-4 rounded-xl bg-zinc-800 mb-5 text-white"
             />
 
+
             <textarea
+              name="message"
               rows="6"
               placeholder="Your Message"
-              className="w-full p-4 rounded-xl bg-zinc-800"
+              required
+              className="w-full p-4 rounded-xl bg-zinc-800 text-white"
             ></textarea>
 
+
             <button
+              type="submit"
               className="w-full mt-6 bg-green-500 hover:bg-green-600 py-4 rounded-xl text-xl font-bold"
             >
               Send Message
             </button>
 
-          </div>
+
+          </form>
+
 
         </div>
+
 
       </div>
     </section>

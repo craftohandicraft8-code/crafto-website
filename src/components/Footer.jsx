@@ -61,11 +61,11 @@ function Footer() {
           </h3>
 
           <p className="text-gray-400">
-            craftostore@gmail.com
+            crafto.handicraft8@gmail.com
           </p>
 
           <p className="text-gray-400 mt-2">
-            +91 XXXXX XXXXX
+            +91 9999230726
           </p>
 
           <p className="text-gray-400 mt-2">
@@ -87,7 +87,7 @@ function Footer() {
           </p>
 
           <p className="text-gray-400">
-            COO : Abhishek Tiwari
+            COO : coming soon
           </p>
 
           <p className="text-gray-400">
@@ -99,7 +99,7 @@ function Footer() {
           </p>
 
           <p className="text-gray-400">
-            Product Design & HR : Purojit Sarkar
+            Product Design & HR :  coming soon
           </p>
 
         </div>

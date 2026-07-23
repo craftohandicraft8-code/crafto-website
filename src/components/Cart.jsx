@@ -27,11 +27,12 @@ function Cart() {
           cartOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
+
         {/* Header */}
 
-        <div className="flex justify-between items-center p-6 border-b border-zinc-800">
+        <div className="flex justify-between items-center p-5 border-b border-zinc-800">
 
-          <h2 className="text-3xl font-bold text-white">
+          <h2 className="text-2xl font-bold text-white">
             🛒 Shopping Cart
           </h2>
 
@@ -44,9 +45,10 @@ function Cart() {
 
         </div>
 
+
         {/* Products */}
 
-        <div className="p-5 h-[68vh] overflow-y-auto">
+        <div className="p-5 h-[72vh] overflow-y-auto">
 
           {cart.length === 0 ? (
 
@@ -68,26 +70,29 @@ function Cart() {
 
               <div
                 key={item.id}
-                className="bg-zinc-900 rounded-2xl overflow-hidden mb-6 border border-zinc-800"
+                className="bg-zinc-900 rounded-2xl overflow-hidden mb-5 border border-zinc-800"
               >
 
                 <img
                   src={item.image}
                   alt={item.name}
-                  className="w-full h-44 object-cover"
+                  className="w-full h-40 object-cover"
                 />
 
-                <div className="p-5">
 
-                  <h3 className="text-2xl font-bold text-white">
+                <div className="p-4">
+
+                  <h3 className="text-xl font-bold text-white">
                     {item.name}
                   </h3>
+
 
                   <p className="text-green-400 text-xl mt-2">
                     ₹{item.price}
                   </p>
 
-                  <div className="flex items-center mt-5">
+
+                  <div className="flex items-center mt-4">
 
                     <button
                       onClick={() => decreaseQty(item.id)}
@@ -96,9 +101,11 @@ function Cart() {
                       −
                     </button>
 
-                    <span className="mx-5 text-xl font-bold">
+
+                    <span className="mx-5 text-xl font-bold text-white">
                       {item.quantity}
                     </span>
+
 
                     <button
                       onClick={() => increaseQty(item.id)}
@@ -107,16 +114,20 @@ function Cart() {
                       +
                     </button>
 
+
                     <button
                       onClick={() => removeFromCart(item.id)}
-                      className="ml-auto bg-red-600 hover:bg-red-700 px-4 py-2 rounded-lg text-white"
+                      className="ml-auto bg-red-600 hover:bg-red-700 px-3 py-2 rounded-lg text-white"
                     >
                       Remove
                     </button>
 
+
                   </div>
 
+
                 </div>
+
 
               </div>
 
@@ -126,34 +137,46 @@ function Cart() {
 
         </div>
 
+
+
         {/* Footer */}
 
-        <div className="absolute bottom-0 left-0 w-full bg-zinc-950 border-t border-zinc-800 p-6">
+        <div className="absolute bottom-0 left-0 w-full bg-zinc-950 border-t border-zinc-800 p-4">
 
-          <div className="flex justify-between text-2xl font-bold">
+          <div className="flex justify-between text-xl font-bold text-white">
 
-            <span>Total</span>
+            <span>
+              Total
+            </span>
+
 
             <span className="text-green-400">
               ₹{totalPrice}
             </span>
 
+
           </div>
+
+
 
           <Link to="/checkout">
 
             <button
               onClick={() => setCartOpen(false)}
-              className="w-full mt-6 bg-green-500 hover:bg-green-600 py-4 rounded-xl text-xl font-bold"
+              className="w-full mt-3 bg-green-500 hover:bg-green-600 py-3 rounded-xl text-lg font-bold text-black"
             >
               Proceed To Checkout
             </button>
 
+
           </Link>
+
 
         </div>
 
+
       </div>
+
     </>
   );
 }

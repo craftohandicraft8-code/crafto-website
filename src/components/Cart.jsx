@@ -48,7 +48,7 @@ function Cart() {
 
         {/* Products */}
 
-        <div className="p-5 h-[72vh] overflow-y-auto">
+        <div className="p-5 h-[60vh] overflow-y-auto">
 
           {cart.length === 0 ? (
 
